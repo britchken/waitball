@@ -1,9 +1,45 @@
 <!-- Display the countdown timer in an element -->
-<p id="demo"></p>
+<head>
+<style>
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 25px;
+  }
+  div.a {
+    font-size: 30px;
+  }
+</style>
+</head>
+<body>
+
+<font style="font-family:cursive">
+   <center>
+     <div class=a> My, you're looking radiant today!</div>
+
+    <div class=a>
+      How long until we see each other?
+     </div>
+     </center>
+  </font>
+<center>
+  <div class="container">
+    <img src="ball.jpg">
+    <font color="black">
+      <div class="centered" id="demo"></div>
+    </font>
+  </div>
+  </center>
+
+</body>
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+var countDownDate = new Date("Mar 25, 2020 15:37:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -21,8 +57,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h<br>"
+  + minutes + "m<br>" + seconds + "s ";
 
   // If the count down is finished, write some text
   if (distance < 0) {
