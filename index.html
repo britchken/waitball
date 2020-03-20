@@ -1,14 +1,17 @@
-<!-- Display the countdown timer in an element -->
-<head>
+
+<!-- saved from url=(0025)http://magicwaitball.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style>
+  .container {
+  	width: 900px;
+  	margin: auto;
+  }
   /* Centered text */
   .centered {
-    position: absolute;
-    top: 61%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 25px;
+  	position: relative;
+  	top: 300px;
+  	left: 400px;
+  	font-size: 24px;
   }
   div.a {
     font-size: 30px;
@@ -19,23 +22,19 @@
 
 <font style="font-family:cursive">
    <center>
-     <div class=a>Happy Birthday, Divya! <3<br>This counter will always count down the time until we see each other!</div>
+     <div class="a">Happy Birthday, Divya! &lt;3<br>This counter will always count down the time until we see each other!</div>
 <br>
-    <div class=a>
+    <div class="a">
       How long until we see each other?
      </div>
      </center>
   </font>
-<center>
-  <div class="container">
-    <img src="ball.jpg">
+<div class="container">
     <font color="black">
-      <div class="centered" id="demo"></div>
-    </font>
-  </div>
-  </center>
+    <div class="centered" id="demo">EXPIRED</div></font>
+  <img src="./ball.jpg"></div>
+</div>
 
-</body>
 
 <script>
 // Set the date we're counting down to
@@ -67,3 +66,4 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
+</body></html>
